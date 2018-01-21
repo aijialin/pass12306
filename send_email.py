@@ -11,7 +11,7 @@ import time
 def send(content):  
       
     #发送邮箱  
-    mail_from = 'ticket_for_12306@qq.com'  
+    mail_from = config.mail_username  
     #发送邮件主题  
     mail_subject = '已下单，请尽快登陆12306完成支付'
     #发送邮箱服务器  
@@ -41,4 +41,3 @@ def send(content):
     
     smtp.quit()  
       
-#send("同志你好，请尽快下单 https://kyfw.12306.cn/otn/queryOrder/initNoComplete")
